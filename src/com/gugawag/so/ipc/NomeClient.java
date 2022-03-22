@@ -24,11 +24,11 @@ public class NomeClient {
 			System.out.println("=== Cliente iniciado ===\n");
 
 			String line = bin.readLine();
-			System.out.println("O servidor me disse:" + line);
+			System.out.println("O servidor me disse: " + line);
 
 			PrintWriter pout = new PrintWriter(servidorSock.getOutputStream(), true);
 			// TODO Altere abaixo para enviar seu nome ao servidor
-			pout.println("SEU NOME AQUI");
+			pout.println("Diego Frankney Frazão da Silva");
 			servidorSock.close();
 		}
 		catch (IOException ioe) {

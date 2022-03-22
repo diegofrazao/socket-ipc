@@ -27,13 +27,13 @@ public class DateServer{
 				PrintWriter pout = new PrintWriter(client.getOutputStream(), true);
 
 				// Escreve a data atual no socket
-				pout.println(new Date().toString() + "-Boa noite alunos!");
+				pout.println("Diego Frankney Frazão da Silva - 20161370002!");
 
 				InputStream in = client.getInputStream();
 				BufferedReader bin = new BufferedReader(new InputStreamReader(in));
 
 				String line = bin.readLine();
-				System.out.println("O cliente me disse:" + line);
+				System.out.println("O cliente me disse: " + line);
 
 				// fechar o socket e volta no loop para escutar novas conexões
 				client.close();
